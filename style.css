@@ -1,0 +1,30 @@
+body {
+  background-color: #1f1f1f;
+  color: #e1e1e1;
+}
+
+.title {
+  display: flex;
+  width: 80vw;
+  height: 50vh;
+}
+
+.svg-mask {
+  stroke: #e1e1e1;
+  stroke-width: 20;
+  fill: none;
+  stroke-linecap: round;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: strokeOffset 4.5s linear forwards;
+}
+
+.paths {
+  fill: #e1e1e1;
+}
+
+@keyframes strokeOffset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
