@@ -5,8 +5,10 @@ body {
 
 .title {
   display: flex;
+  margin: 4rem auto;
+  justify-content: center;
   width: 80vw;
-  height: 50vh;
+  height: 20vh;
 }
 
 .svg-mask {
@@ -24,7 +26,13 @@ body {
 }
 
 @keyframes strokeOffset {
-  to {
+  0% {
+    stroke-dashoffset: 3000;
+  }
+  95% {
+    stroke-dashoffset: 650;
+  }
+  100% {
     stroke-dashoffset: 0;
   }
 }
