@@ -50,7 +50,7 @@
 		stroke-linecap: round;
 		stroke-dasharray: 3000;
 		stroke-dashoffset: 3000;
-		animation: strokeOffset 4.5s linear forwards;
+		animation: strokeOffset 4.5s cubic-bezier(0.85, 0.85, 1, 0.5) forwards;
 	}
 
 	.name-paths {
@@ -70,13 +70,7 @@
 	}
 
 	@keyframes strokeOffset {
-		0% {
-			stroke-dashoffset: 3000;
-		}
-		95% {
-			stroke-dashoffset: 650;
-		}
-		100% {
+		to {
 			stroke-dashoffset: 0;
 		}
 	}
