@@ -3,7 +3,7 @@ body {
   color: #e1e1e1;
 }
 
-.title {
+.name-container {
   display: flex;
   margin: 4rem auto;
   justify-content: center;
@@ -11,7 +11,7 @@ body {
   height: 20vh;
 }
 
-.svg-mask {
+.name-mask {
   stroke: #e1e1e1;
   stroke-width: 20;
   fill: none;
@@ -21,8 +21,8 @@ body {
   animation: strokeOffset 4.5s linear forwards;
 }
 
-.paths {
-  fill: #e1e1e1;
+.name-paths {
+  fill: #9c89b8;
 }
 
 @keyframes strokeOffset {
