@@ -1,4 +1,9 @@
 body {
+  background-color: #f0e6ef;
+  color: #1f1f1f;
+}
+
+.dark body {
   background-color: #1f1f1f;
   color: #e1e1e1;
 }
@@ -8,21 +13,33 @@ body {
   margin: 4rem auto;
   justify-content: center;
   width: 80vw;
-  height: 20vh;
+  height: 15vh;
 }
 
 .name-mask {
-  stroke: #e1e1e1;
+  stroke: #fff;
   stroke-width: 20;
   fill: none;
   stroke-linecap: round;
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
-  animation: strokeOffset 4.5s linear forwards;
+  animation: strokeOffset 4.5s linear infinite alternate;
 }
 
 .name-paths {
   fill: #9c89b8;
+}
+
+.name-paths .name-underline {
+  fill: #f0a6ca;
+}
+
+.dark .name-paths {
+  fill: #b8bedd;
+}
+
+.dark .name-paths .name-underline {
+  fill: #efc3e6;
 }
 
 @keyframes strokeOffset {
