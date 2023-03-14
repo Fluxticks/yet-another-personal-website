@@ -6,12 +6,12 @@
 	<TitleName />
 </div>
 
-<style>
+<style lang="postcss">
 	.name-container {
 		display: flex;
 		margin: 4rem auto;
 		justify-content: center;
-		width: 80vw;
-		height: 15vh;
+		height: clamp(50px, 30px + 20vw, 112px);
+		@apply lg:h-28 lg:w-auto;
 	}
 </style>
