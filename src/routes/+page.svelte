@@ -1,9 +1,9 @@
 <script>
-	import Name from '../components/Name.svelte';
+	import TitleName from '../components/TitleName.svelte';
 </script>
 
 <div class="name-container">
-	<Name />
+	<TitleName />
 </div>
 
 <style>
