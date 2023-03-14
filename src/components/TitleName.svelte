@@ -1,3 +1,7 @@
+<script>
+	import './TitleName.postcss';
+</script>
+
 <svg viewBox="0 0 303 129" role="img">
 	<title>Fluxticks</title>
 	<defs>
@@ -42,7 +46,7 @@
 	</g>
 </svg>
 
-<style>
+<style lang="postcss">
 	.name-mask {
 		stroke: #fff;
 		stroke-width: 20;
@@ -51,22 +55,6 @@
 		stroke-dasharray: 3000;
 		stroke-dashoffset: 3000;
 		animation: strokeOffset 4.5s cubic-bezier(0.85, 0.85, 1, 0.5) forwards;
-	}
-
-	.name-paths {
-		fill: #9c89b8;
-	}
-
-	.name-paths .name-underline {
-		fill: #f0a6ca;
-	}
-
-	.dark .name-paths {
-		fill: #b8bedd;
-	}
-
-	.dark .name-paths .name-underline {
-		fill: #efc3e6;
 	}
 
 	@keyframes strokeOffset {

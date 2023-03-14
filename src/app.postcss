@@ -1,4 +1,9 @@
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+body {
+	@apply bg-[#f0e6ef] text-[#1e1e1e];
+	@apply dark:bg-[#1e1e1e] dark:text-[#f0e6ef];
+}
